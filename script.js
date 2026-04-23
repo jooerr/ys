@@ -3,7 +3,9 @@ const text = `🎈🎂🎁
 !Happy birthday ✨
 
 Happy birthday to my favorite jessyyy,
-I’m so lucky that I have you <<
+I’m so lucky that I have you <3
+
+You are the most amazing person I know, and I’m so grateful to have you in my life. You bring so much joy and happiness to everyone around you, and I hope your birthday is filled with all the love and happiness you deserve.
 Wishing you the happiest birthday ever 💖
 
 ❤️`;
