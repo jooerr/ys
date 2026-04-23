@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Jessy </title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        .image {
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 1em;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            background: white;
+            color: black;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #ccc;
+        }
+
+        #message {
+            margin-top: 20px;
+            font-size: 1.2em;
+            opacity: 0;
+            transition: 0.6s;
+            line-height: 1.6;
+        }
+
+        #message.show {
+            opacity: 1;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Happy Birthday Jessy 🎂</h1>
+
+        <!-- غير اسم الصورة لو مختلف -->
+        <img src="roo.jpeg" alt="Us" class="image">
+
+        <button onclick="showMessage()">اضغط هنا 💙</button>
+
+        <div id="message">
+            🎈🎂🎁<br><br>
+            !Happy birthday ✨<br><br>
+            Happy birthday to my favorite jessyyy,<br>
+            I’m so lucky that I have you &lt;3<br>
+            Wishing you the happiest birthday ever 💖<br><br>
+            ❤️
+        </div>
+
+        <!-- حط هنا ملف المزيكا -->
+        <audio id="music" src="music.mp3"></audio>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").classList.add("show");
+
+            var music = document.getElementById("music");
+            music.play();
+        }
+    </script>
+
+</body>
+</html>
